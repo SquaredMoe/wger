@@ -1,0 +1,7 @@
+# Place this file in the root of a separate checkout of wger-project/docker.
+# Requires Docker Compose >= 2.24.4 for !override.
+# SECURITY: bind wger only to the local PC until HTTPS and access control are configured.
+services:
+  nginx:
+    ports: !override
+      - "127.0.0.1:8080:80"
